@@ -32,9 +32,9 @@ module Heroku::Command
   end
 end
 
-Heroku::Command::Help.group('Accounts') do |group|
-  group.command('account', 'lists all accounts')
-  group.command('account:add', 'adds a new account')
-  group.command('account:switch', 'switches accounts')
-  group.command('account:remove', 'removes a new account')
+Heroku::Command::Help.group('Accounts Plugin') do |group|
+  group.command('accounts', 'lists all accounts')
+  group.command('accounts:add', 'adds a new account')
+  group.command('accounts:switch', 'switches accounts')
+  group.command('accounts:remove', 'removes a new account')
 end
